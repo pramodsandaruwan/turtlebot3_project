@@ -25,4 +25,4 @@ cd ~/turtlebot3_ws/src/turtlebot3_project
 ```
 #### Contact / Info
 
-**pramod sandaruwan** | [Email](mailto:pramodsandaruwan80@gmail.com) | [Github](https://www.github.com/pramodsandaruwan) | [Phone](0715875629)
+**pramod sandaruwan** | [Email](mailto:pramodsandaruwan80@gmail.com) | [Github](https://www.github.com/pramodsandaruwan) |
