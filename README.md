@@ -22,7 +22,7 @@ catkin_make
 #### Exicuting the project
 ``` bash
 export TURTLEBOT3_MODEL=waffle_pi
-cp -b $HOME/turtlebot3_project/src/turtlebot3_project/run.sh $HOME/turtlebot3_project/
+cp -b $HOME/turtlebot3_project/src/turtlebot3_project/run.sh $HOME/turtlebot3_ws/
 cd ~/turtlebot3_ws/
 ./run
 ```
