@@ -2,6 +2,7 @@
 
 #### Create project workspace
 ``` bash
+sudo apt update
 rosdep update
 mkdir -p ~/turtlebot3_ws/src
 cd ~/turtlebot3_ws/
