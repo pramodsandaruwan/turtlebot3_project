@@ -2,6 +2,7 @@
 
 #### Create project workspace
 ``` bash
+rosdep update
 mkdir -p ~/turtlebot3_ws/src
 cd ~/turtlebot3_ws/
 catkin_make
