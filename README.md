@@ -1,6 +1,6 @@
 # turtlebot3 project
 
-#### Clone the repository
+#### Create project workspace
 ``` bash
 mkdir -p ~/turtlebot3_ws/src
 cd ~/turtlebot3_ws/
@@ -14,7 +14,7 @@ git clone https://github.com/pramodsandaruwan/turtlebot3_project.git
 #### Installing
 ``` bash
 cd ~/turtlebot3_ws
-rosdep install --from-paths /path/to/your/turtlebot3_project/src --ignore-src
+rosdep install --from-paths /path/to/your/turtlebot3_project/src --ignore-src # Example /ubuntu/pramod/turtlebot3_project/src
 catkin_make
 ```
 #### Exicuting the project
