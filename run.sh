@@ -4,7 +4,7 @@ reset=`tput sgr0`
 
 echo "${green}Turtlebot simulation...${reset}"
 
-WS_PATH=$HOME/turtlebot3_project
+WS_PATH=$HOME/turtlebot3_ws
 
 source $WS_PATH/devel/setup.bash
 
