@@ -9,6 +9,7 @@ from geometry_msgs.msg import Point, Pose, Quaternion, PoseStamped
 from actionlib_msgs.msg import GoalStatusArray
 import time
 import math
+import sys 
 
 class NavigatorCtrl():
     def __init__(self):
@@ -62,17 +63,18 @@ class NavigatorCtrl():
                 self.goal_stat = 'Arrived'
                 self.flag = 0
 
-    
     def data_from_app(self):
         
         if self.goal_stat == 'Arrived' and self.arm == 1:
-            file1 = open("myfile.txt","w") 
+            file1 = open("./src/turtlebot3_project/myfile.txt","w") 
             file1.write("Robot Arrived to position: "+self.room) 
             file1.close()
             self.arm  = 0
+            rospy.loginfo("Robot Arrived to position: "+self.room)
+            sys.exit()
 
         elif self.arm == 0:
-            file1     = open("myfile.txt","r+")  
+            file1     = open("./src/turtlebot3_project/myfile.txt","r+")  
             myarray   = file1.read()
             if (myarray[0] == 'A' or myarray[0] == 'B' or myarray[0] == 'C' or myarray[0] == 'Z'):
                 self.room = myarray[0]
@@ -82,7 +84,7 @@ class NavigatorCtrl():
             file1.seek(0)
             file1.close()
             self.arm = 1
-        rospy.loginfo(self.goal_stat)
+        rospy.loginfo('Moving...')
         
     @property
     
@@ -108,7 +110,7 @@ class NavigatorCtrl():
             if data_limit < 5 and self.arm == 1:
                 self.send_nav_msg()
                 data_limit +=1
-
+            #sys.exit()
             rate.sleep()
 
 if __name__ == "__main__":
