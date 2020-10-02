@@ -60,6 +60,7 @@ catkin_make
 echo "source $CATKIN_WS/devel/setup.bash" >> $HOME/.bashrc
 source $CATKIN_WS/devel/setup.bash
 cp -b $CATKIN_WS/src/turtlebot3_project/run.sh $CATKIN_WS/
+cp -b $CATKIN_WS/src/turtlebot3_project/move.sh $CATKIN_WS/
 
 echo "${green}All done.${reset}"
 
