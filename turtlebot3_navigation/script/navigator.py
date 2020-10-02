@@ -33,7 +33,7 @@ class NavigatorCtrl():
         self.positions = {}
         self.positions['A']  = [-2.5, 2.5, 90]
         self.positions['B']  = [ 2.0, 2.5, 90]
-        self.positions['C']  = [-2.5, 1.0, 90]
+        self.positions['C']  = [-3.0, 0.5, 90]
         self.positions['Z']  = [4.0, -1.5, 90]
         self.room = 'Z'
         self.goal_stat = 'stoped'
