@@ -1,1 +1,1 @@
-Robot Arrived to position: C
+Robot Arrived to position: A
