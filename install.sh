@@ -26,8 +26,8 @@ sudo apt update
 rosdep update
 
 # Environment setup - optional. Do not run if multiple versions of ROS are present.
-source /opt/ros/kinetic/setup.bash
-echo "source /opt/ros/kinetic/setup.bash" >> $HOME/.bashrc
+source /opt/ros/$ROS_DISTRO/setup.bash
+echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> $HOME/.bashrc
 source ~/.bashrc
 
 echo "${green}Creating workspace ...${reset}"
