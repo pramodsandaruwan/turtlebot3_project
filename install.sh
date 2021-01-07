@@ -53,7 +53,7 @@ fi
 
 cd $CATKIN_WS
 echo "Building turtlebot3_project packages..."
-rosdep install --from-paths $CATKIN_WS/src --ignore-src
+rosdep install -y --from-paths $CATKIN_WS/src --ignore-src
 catkin_make
 
 # Environment setup.
