@@ -47,6 +47,7 @@ cd $CATKIN_WS/src
 if [ ! -d "$CATKIN_WS/src/turtlebot3_project" ]; then
     echo "Cloning turtlebot3_project sources..."
     git clone https://github.com/pramodsandaruwan/turtlebot3_project.git
+    git clone https://github.com/pramodsandaruwan/firebase_ros.git
 else
     echo "Updating turtlebot3_project sources..."
     cd turtlebot3_ws
