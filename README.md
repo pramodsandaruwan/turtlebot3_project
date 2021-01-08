@@ -12,6 +12,7 @@ catkin_make
 ``` bash
 cd ~/turtlebot3_ws/src
 git clone https://github.com/pramodsandaruwan/turtlebot3_project.git
+git clone https://github.com/pramodsandaruwan/firebase_ros.git
 ```
 #### Installing
 ``` bash
