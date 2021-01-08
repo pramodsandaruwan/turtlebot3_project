@@ -22,6 +22,9 @@ done
 
 echo "${green}Updating system ...${reset}"
 
+pip install pyrebase
+pip3 install keyboard
+pip install keyboard
 sudo apt update
 rosdep update
 
